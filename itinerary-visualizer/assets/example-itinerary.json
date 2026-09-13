@@ -1,0 +1,46 @@
+{
+  "title": "山海之间 2 日自驾",
+  "subtitle": "一份可离线验证的示例行程",
+  "region": "示例地区",
+  "date_range": "2026-10-01 — 2026-10-02",
+  "coordinate_system": "GCJ-02",
+  "route_provider": "示例已核实路线",
+  "route_queried_at": "2026-09-13",
+  "days": [
+    {
+      "day": 1,
+      "date": "10月1日",
+      "title": "河谷与古村",
+      "summary": "沿河进入山脚村落",
+      "stops": [
+        {"name": "河谷游客中心", "address": "示例路 1 号", "lng": 120.10, "lat": 30.20, "time": "09:00", "activity": "取车与补给", "motif": "river", "scenery": "河谷晨雾"},
+        {"name": "山脚古村", "address": "古村路 8 号", "lng": 120.34, "lat": 30.42, "time": "12:30", "activity": "午餐与村落漫步", "motif": "village", "scenery": "木屋与田野"},
+        {"name": "森林营地", "address": "林场支路 3 号", "lng": 120.48, "lat": 30.65, "time": "17:00", "activity": "日落与入住", "motif": "forest", "scenery": "杉林营地"}
+      ],
+      "legs": [
+        {"from": "河谷游客中心", "to": "山脚古村", "distance_km": 42.8, "duration_min": 58, "source": "provided", "polyline": [[120.10, 30.20], [120.16, 30.25], [120.22, 30.31], [120.34, 30.42]]},
+        {"from": "山脚古村", "to": "森林营地", "distance_km": 35.4, "duration_min": 51, "source": "provided", "polyline": [[120.34, 30.42], [120.38, 30.49], [120.41, 30.56], [120.48, 30.65]]}
+      ],
+      "lodging": {"name": "森林营地木屋", "address": "林场支路 3 号", "lng": 120.48, "lat": 30.65, "note": "一晚"},
+      "meals": ["古村家常菜", "营地晚餐"],
+      "tips": ["山区弯道较多，日落前抵达"]
+    },
+    {
+      "day": 2,
+      "date": "10月2日",
+      "title": "高山湖与归程",
+      "summary": "清晨看湖，午后返回河谷",
+      "stops": [
+        {"name": "森林营地", "address": "林场支路 3 号", "lng": 120.48, "lat": 30.65, "time": "08:00", "activity": "早餐后出发", "motif": "forest"},
+        {"name": "高山湖观景台", "address": "环湖路北段", "lng": 120.67, "lat": 30.54, "time": "10:00", "activity": "环湖步道", "motif": "lake", "scenery": "湖岸与水鸟"},
+        {"name": "河谷游客中心", "address": "示例路 1 号", "lng": 120.10, "lat": 30.20, "time": "15:30", "activity": "还车返程", "motif": "river"}
+      ],
+      "legs": [
+        {"from": "森林营地", "to": "高山湖观景台", "distance_km": 28.2, "duration_min": 44, "source": "provided", "polyline": [[120.48, 30.65], [120.54, 30.63], [120.61, 30.58], [120.67, 30.54]]},
+        {"from": "高山湖观景台", "to": "河谷游客中心", "distance_km": 79.6, "duration_min": 105, "source": "provided", "polyline": [[120.67, 30.54], [120.55, 30.48], [120.43, 30.40], [120.28, 30.31], [120.10, 30.20]]}
+      ],
+      "meals": ["湖边简餐"],
+      "tips": ["观景台停车位有限"]
+    }
+  ]
+}
